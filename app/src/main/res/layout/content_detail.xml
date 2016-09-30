@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="appkg.kg.shop3d.activity.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="visible"
+        custom:pager_animation="Stack"
+        custom:pager_animation_span="1100" />
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        custom:selected_color="#0095BF"
+        custom:selected_height="6dp"
+        custom:selected_padding_left="5dp"
+        custom:selected_padding_right="5dp"
+        custom:selected_width="6dp"
+        custom:shape="oval"
+        custom:unselected_color="#55333333"
+        custom:unselected_height="6dp"
+        custom:unselected_padding_left="5dp"
+        custom:unselected_padding_right="5dp"
+        custom:unselected_width="6dp" />
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator2"
+        style="@style/AndroidImageSlider_Corner_Oval_Orange"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_marginTop="8dp"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="8"
+        android:text="@string/app_name"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+
+            android:background="@drawable/button"
+            android:text="@string/download"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+</LinearLayout>

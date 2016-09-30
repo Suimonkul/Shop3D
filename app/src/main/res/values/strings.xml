@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Shop3d</string>
+    <string name="models">Models</string>
+    <string name="welcome">Welcome</string>
+    <string name="title_activity_models">ModelsActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="download">Download</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Ut quis pulvinar augue, posuere lobortis neque. Morbi pharetra arcu at posuere
+        sollicitudin. Vivamus eu mattis arcu, lacinia pharetra lorem. Sed lacinia lobortis congue.
+        Cras accumsan dictum auctor. Duis ornare enim sit amet lacus posuere, in condimentum erat scelerisque.</string>
+</resources>
