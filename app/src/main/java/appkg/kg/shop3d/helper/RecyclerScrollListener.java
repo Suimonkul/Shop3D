@@ -11,7 +11,7 @@ public abstract class RecyclerScrollListener extends RecyclerView.OnScrollListen
 
     public int previousTotal = 0; // The total number of items in the dataset after the last load
     private boolean loading = true; // True if we are still waiting for the last set of data to load.
-    private int visibleThreshold = 6; // The minimum amount of items to have below your current scroll position before loading more.
+    private int visibleThreshold = 8; // The minimum amount of items to have below your current scroll position before loading more.
     int firstVisibleItem, visibleItemCount, totalItemCount;
 
     public int current_page = 0;
@@ -36,7 +36,7 @@ public abstract class RecyclerScrollListener extends RecyclerView.OnScrollListen
         }
         if (!loading && (totalItemCount - visibleItemCount)
                 <= (firstVisibleItem + visibleThreshold) && totalItemCount > 1) {
-            current_page += 6;
+            current_page += 8;
             onLoadMore(current_page);
 
             loading = true;
